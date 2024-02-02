@@ -623,6 +623,8 @@ function addClassTestTotr() {
 addClassTestTotr();
 console.log("Esercizio 26 - Funzione per aggiungere ad ogni tag <tr> la classe CSS test", allTr);
 
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
@@ -636,6 +638,24 @@ console.log("Esercizio 26 - Funzione per aggiungere ad ogni tag <tr> la classe C
   ***
 
 */
+
+function halfTree(altezza) {
+  // Costruisco il mezzo albero di asterischi
+  for (let i = 1; i <= altezza; i++) {
+    let riga = "";
+
+    // Aggiungo asterischi alla riga
+    for (let j = 1; j <= i; j++) {
+      riga += "*";
+    }
+
+    // Stampa la riga
+    console.log(riga);
+  }
+}
+
+console.log("Esercizio 27 - Funzione che costruisce un mezzo albero di *");
+halfTree(8);
 
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
@@ -652,5 +672,20 @@ console.log("Esercizio 26 - Funzione per aggiungere ad ogni tag <tr> la classe C
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
+
+function isPrime(x) {
+  if (x <= 1) {
+    return false;
+  }
+  for (let i = 2; i < x; i++) {
+    if (x % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log("Esercizio 29 - :");
+console.log("Il 7 è un numero primo quindi --> " + isPrime(7));
+console.log("L' 8 non è un numero primo quindi --> " + isPrime(8));
 
 /* Questo array viene usato per gli esercizi. Non modificarlo. */
