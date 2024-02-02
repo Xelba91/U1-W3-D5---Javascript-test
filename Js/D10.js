@@ -133,7 +133,8 @@ console.log("Esercizio 4 - caso false", deleteOne("ciao", false));
 */
 
 function onlyLetters(str) {
-  return str.replace(/[0-9]/, "");
+  return str.replace(/[0-9]/g, "");
+  // La flag g fa sì che la sostituzione venga applicata a tutte le occorrenze della corrispondenza, non solo alla prima.
 }
 
 console.log("Esercizio 5 -:", onlyLetters("I have 4 dogs"));
