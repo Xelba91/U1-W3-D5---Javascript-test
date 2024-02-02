@@ -657,6 +657,8 @@ function halfTree(altezza) {
 console.log("Esercizio 27 - Funzione che costruisce un mezzo albero di *");
 halfTree(8);
 
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
@@ -668,6 +670,22 @@ halfTree(8);
   *****
 
 */
+
+function tree(altezza) {
+  // Costruisco l'albero di asterischi
+  for (let i = 1; i <= altezza; i++) {
+    let spazi = " ".repeat(altezza - i); // Aggiungi spazi prima degli asterischi
+    let asterischi = "*".repeat(2 * i - 1); // Aggiungi asterischi alla riga
+
+    // Stampa la riga con spazi e asterischi
+    console.log(spazi + asterischi);
+  }
+}
+
+console.log("Esercizio 28 - Funzione che costruisce un albero di *");
+tree(5);
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
@@ -688,4 +706,4 @@ console.log("Esercizio 29 - :");
 console.log("Il 7 è un numero primo quindi --> " + isPrime(7));
 console.log("L' 8 non è un numero primo quindi --> " + isPrime(8));
 
-/* Questo array viene usato per gli esercizi. Non modificarlo. */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
